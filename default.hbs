@@ -4,22 +4,21 @@
         <title>{{meta_title}}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}">
         <link rel="stylesheet" href="{{asset "css/main.css"}}">
         {{ghost_head}}
     </head>
 
     <body>
-        <header class="header">
-            <div class="header__inner page-width">
-                <a class="header__logo" href="{{@site.url}}">
+        <header>
+            <div>
+                <a href="{{@site.url}}">
                     {{#if @site.logo}}
                         <img src="{{@site.logo}}" alt="{{@site.title}}">
                     {{else}}
                         {{@site.title}}
                     {{/if}}
                 </a>
-                <div class="header__nav">
+                <div>
                     {{navigation}}
                 </div>
             </div>
