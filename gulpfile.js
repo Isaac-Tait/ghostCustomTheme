@@ -1,3 +1,5 @@
+const tailwind = require('tailwindcss')
+
 const {series, watch, src, dest, parallel} = require('gulp');
 const pump = require('pump');
 const path = require('path');
@@ -50,6 +52,7 @@ function css(done) {
         postcss([
             easyimport,
             colorFunction(),
+            tailwind(),
             autoprefixer(),
             cssnano()
         ]),
