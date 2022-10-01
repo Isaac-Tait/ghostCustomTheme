@@ -1,7 +1,9 @@
 <nav aria-label="breadcrumbs">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/novel">Novel</a></li>
-        <li class="breadcrumb-item"><a href="/tag/part-one">{{tag}}</a></li>
+        <li class="breadcrumb-item">
+            {{#primary_tag}}<a href="{{url}}">{{name}}</a>{{/primary_tag}}
+        </li>
         <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
     </ol>
 </nav>
