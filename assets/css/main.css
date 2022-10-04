@@ -6,10 +6,6 @@
   margin: auto;
 }
 
-#ghost-portal-root {
-  display: none;
-}
-
 .header {
   padding: 20px 0;
   background-color: #333;
