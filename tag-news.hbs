@@ -1,12 +1,12 @@
 {{!< default}}
 
-{{#tag}}
-    <div>
-        <h1>{{ name }}</h1>
-    </div>
-{{/tag}}
-
 <div class="page-width">
+    {{#tag}}
+        <div>
+            <h1>{{ name }}</h1>
+        </div>
+    {{/tag}}
+    
     <div class="posts">
         {{#foreach posts filter="published_at asc"}}
             <a href="{{url absolute="true"}}">
