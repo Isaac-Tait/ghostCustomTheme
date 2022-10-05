@@ -13,11 +13,11 @@
 
         <div class="pagination justify-content-between">
             {{#prev_post in="primary_tag"}}
-		        <p>Previous Chapter <a href="{{url}}">{{title}}</a></p>
+		        <p> <<<< <a href="{{url}}">{{title}}</a></p>
             {{/prev_post}}
 
             {{#next_post in="primary_tag"}}
-                <p>Next Chapter <a href="{{url}}">{{title}}</a></p>
+                <p> >>>> <a href="{{url}}">{{title}}</a></p>
             {{/next_post}}
         </div>
     {{/post}}
