@@ -10,5 +10,13 @@
         <section class="post-content">
             {{content}}
         </section>
+
+        {{#prev_post in="primary_tag"}}
+		    <a href="{{url}}">{{title}}</a>
+        {{/prev_post}}
+
+        {{#next_post in="primary_tag"}}
+            <a href="{{url}}">{{title}}</a>
+        {{/next_post}}
     {{/post}}
 </div>
