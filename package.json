@@ -81,14 +81,7 @@
                 "width": 2000
             }
         },
-        "card_assets": true,
-        "custom": {
-            "show_logo_in_navigation": {
-                "type": "boolean",
-                "default": false,
-                "group": "site-wide"
-            }
-        }
+        "card_assets": true
     },
     "renovate": {
         "extends": [
