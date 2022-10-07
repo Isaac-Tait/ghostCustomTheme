@@ -25,10 +25,18 @@
 }
 .header__nav ul {
   grid-gap: 15px;
+  justify-content: center;
 }
 .page-header {
   margin-bottom: 30px;
 }
+
+.author {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+
 main {
   margin-top: 20px;
 }
