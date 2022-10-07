@@ -8,10 +8,14 @@
     {{/tag}}
 
     <div class="posts">
-        {{#foreach posts filter="published_at asc"}}
-            <a href="{{url absolute="true"}}">
-                {{title}}
-            </a>
+        {{#foreach posts}}
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="{{url absolute="true"}}">
+                        {{title}}
+                    </a>
+                </li>
+            </ul>
         {{/foreach}}
     </div>
 </div>
