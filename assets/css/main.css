@@ -86,11 +86,7 @@ main {
   display: flex;
   grid-gap: 15px;
 }
-/* .page-with-sidebar > div:first-child .card-img-top {
-    max-height: 150px;
-    object-fit: cover;
-    width: auto;
-  } */
+
 .page-with-sidebar > div:last-child {
   flex: 3;
   border-left: 1px solid #80808033;
@@ -99,15 +95,6 @@ main {
 .pagination {
   justify-content: center;
 }
-/*
-  .post-card-image-container {
-    height: 230px;
-    margin-bottom: 20px;
-  }
-  .post-card-image {
-    max-width: 100%;
-  }
-  */
 
 .image-header {
   height: 400px;
