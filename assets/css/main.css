@@ -106,7 +106,8 @@ main {
   padding-left: 15px;
 }
 .pagination {
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .image-header {

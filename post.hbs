@@ -15,13 +15,13 @@
             {{content}}
         </section>
 
-        <div class="pagination justify-content-between">
+        <div class="pagination">
             {{#prev_post in="primary_tag"}}
-		        <p> <<<< <a href="{{url}}">{{title}}</a></p>
+		        <p>&nbsp;<<<<&nbsp;<a href="{{url}}">{{title}}</a></p>
             {{/prev_post}}
 
             {{#next_post in="primary_tag"}}
-                <p> >>>> <a href="{{url}}">{{title}}</a></p>
+                <p><a href="{{url}}">{{title}}</a>&nbsp;>>>>&nbsp;</p>
             {{/next_post}}
         </div>
     {{/post}}
