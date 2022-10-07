@@ -1,0 +1,21 @@
+{{!< default}}
+
+<div class="page-width">
+    {{#tag}}
+        <div>
+            <h1>{{ name }}</h1>
+        </div>
+    {{/tag}}
+
+    <div class="posts">
+        {{#foreach posts}}
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="{{url absolute="true"}}">
+                        {{title}}
+                    </a>
+                </li>
+            </ul>
+        {{/foreach}}
+    </div>
+</div>
