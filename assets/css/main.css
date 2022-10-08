@@ -110,6 +110,14 @@ main {
   justify-content: space-evenly;
 }
 
+@media (max-width: 700px) {
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .image-header {
   height: 400px;
   background-size: cover;
