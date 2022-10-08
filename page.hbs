@@ -1,13 +1,17 @@
 {{!< default}}
 
-<div class="page-width">
+<div>
+    <header class="header">
+        <div class="header__nav">
+            {{navigation type="secondary"}}
+        </div>
+    </header>
+    <div class="page-width">
     {{#page}}
-        
-        <header class="page-header">
-            <h1 class="page-title">{{title}}</h1>
-        </header>
+        <h1 class="page-title">{{title}}</h1>
         <section class="page-content">
             {{content}}
         </section>
     {{/page}}
+</div>
 </div>

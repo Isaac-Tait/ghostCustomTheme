@@ -1,6 +1,12 @@
 {{!< default}}
 
-<div class="page-width">
+<div>
+    <header class="header">
+        <div class="header__nav">
+            {{navigation type="secondary"}}
+        </div>
+    </header>
+    <div class="page-width">
     {{#post}}
         {{> "breadcrumbs"}}
         
@@ -27,4 +33,5 @@
         <hr />
         {{comments title="Whatcha gotta say?" count=true saturation=80}}
     {{/post}}
+</div>
 </div>
