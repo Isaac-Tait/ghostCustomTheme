@@ -14,7 +14,7 @@
         <section class="post-content">
             {{content}}
         </section>
-
+        
         <div class="pagination">
             {{#prev_post in="primary_tag"}}
 		        <p>&nbsp;<<<<&nbsp;<a href="{{url}}">{{title}}</a></p>
@@ -24,5 +24,7 @@
                 <p><a href="{{url}}">{{title}}</a>&nbsp;>>>>&nbsp;</p>
             {{/next_post}}
         </div>
+        <hr />
+        {{comments}}
     {{/post}}
 </div>
