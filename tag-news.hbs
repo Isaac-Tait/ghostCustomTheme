@@ -1,6 +1,12 @@
 {{!< default}}
 
-<div class="page-width">
+<div>
+    <header class="header">
+        <div class="header__nav">
+            {{navigation type="secondary"}}
+        </div>
+    </header>
+    <div class="page-width">
     {{#tag}}
         <div>
             <h1>{{ name }}</h1>
@@ -14,5 +20,5 @@
             </a>
         {{/foreach}}
     </div>
-    
+</div>
 </div>

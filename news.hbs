@@ -1,5 +1,11 @@
 {{!< default}}
 
+<div>
+    <header class="header">
+        <div class="header__nav">
+            {{navigation type="secondary"}}
+        </div>
+    </header>
 <div class="page-width">
     <h1>The latest news about Wormwood Saga...</h1>
     {{#foreach posts}}
@@ -7,4 +13,5 @@
             {{ title }}
         </a>
     {{/foreach}}
+</div>
 </div>
