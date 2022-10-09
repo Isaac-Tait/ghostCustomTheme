@@ -1,8 +1,3 @@
-//For testing elements in a local environment
-.test {
-  background: red;
-}
-
 .page-width {
   width: 100%;
   max-width: 1048px;
@@ -45,6 +40,17 @@
 .content-center {
   display: flex;
   justify-content: center;
+}
+
+.news-excerpt {
+  font-style: italic;
+  padding-left: 1em;
+  font-size: 15px;
+}
+
+//For testing elements in a local environment
+.test {
+  background: red;
 }
 
 main {

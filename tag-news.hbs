@@ -7,18 +7,22 @@
         </div>
     </header>
     <div class="page-width">
-    {{#tag}}
-        <div>
-            <h1>{{ name }}</h1>
+        {{#tag}}
+            <div class="content-center">
+                <h1>{{ name }}</h1>
+            </div>
+        {{/tag}}
+        <hr />
+        <div class="posts">
+            {{#foreach posts}}
+                <p>{{date published_at format="MM/DD/YYYY"}}&nbsp;--&nbsp;
+                    <a href="{{url absolute="true"}}">
+                        {{title}}
+                    </a>
+                </p>
+                <p class="news-excerpt">{{excerpt}}</p>
+                <hr />
+            {{/foreach}}
         </div>
-    {{/tag}}
-    
-    <div class="posts">
-        {{#foreach posts filter="published_at asc"}}
-            <a href="{{url absolute="true"}}">
-                {{title}}
-            </a>
-        {{/foreach}}
     </div>
-</div>
 </div>
