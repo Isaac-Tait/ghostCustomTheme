@@ -15,13 +15,16 @@
         <hr />
         <div class="posts">
             {{#foreach posts}}
-                <p>{{date published_at format="MM/DD/YYYY"}}&nbsp;--&nbsp;
-                    <a href="{{url absolute="true"}}">
-                        {{title}}
-                    </a>
-                </p>
-                <p class="news-excerpt">{{excerpt}}</p>
-                <hr />
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <p>{{date published_at format="MM/DD/YYYY"}}&nbsp;--&nbsp;
+                            <a href="{{url absolute="true"}}">
+                                {{title}}
+                            </a>
+                        </p>
+                        <p class="news-excerpt">{{excerpt}}</p>
+                    </li>
+                </ul>
             {{/foreach}}
         </div>
     </div>

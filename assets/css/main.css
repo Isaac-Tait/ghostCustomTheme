@@ -48,13 +48,13 @@
   font-size: 15px;
 }
 
+body {
+  background: #dddddd;
+}
+
 //For testing elements in a local environment
 .test {
   background: red;
-}
-
-main {
-  margin-top: 20px;
 }
 
 .posts,
