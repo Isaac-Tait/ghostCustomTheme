@@ -6,25 +6,26 @@
             {{navigation type="secondary"}}
         </div>
     </header>
+    
     <div class="page-width">
-    {{#tag}}
-        <div>
-            <h1>{{ name }}</h1>
-        </div>
-    {{/tag}}
+        {{#tag}}
+            <div>
+                <h1>{{ name }}</h1>
+            </div>
+        {{/tag}}
 
-    <div class="posts">
-        {{#foreach posts}}
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <a href="{{url absolute="true"}}">
-                        {{title}}
-                    </a>
-                </li>
-            </ul>
-        {{/foreach}}
+        <div class="posts">
+            {{#foreach posts}}
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="{{url absolute="true"}}">
+                            {{title}}
+                        </a>
+                    </li>
+                </ul>
+            {{/foreach}}
+        </div>
+        <hr />
+        <p class="content-center">Return me to the novel&#39;s&nbsp;<a href="/novel">index</a>&nbsp;please.</p>
     </div>
-    <hr />
-    <p class="content-center">Return me to the novel&#39;s&nbsp;<a href="/novel">index</a>&nbsp;please.</p>
-</div>
 </div>
