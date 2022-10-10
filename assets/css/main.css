@@ -35,6 +35,8 @@
   display: flex;
   justify-content: center;
   font-style: italic;
+  height: 75px;
+  align-items: flex-end;
 }
 
 .content-center {
