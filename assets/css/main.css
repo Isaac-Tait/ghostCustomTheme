@@ -50,6 +50,10 @@
   font-size: 15px;
 }
 
+.title {
+  padding-top: 20px;
+}
+
 body {
   background: #dddddd;
 }
