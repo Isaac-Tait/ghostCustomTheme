@@ -537,13 +537,13 @@ progress {
   max-width: 75%;
   height: auto;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 @media (max-width: 576px) {
   .img-fluid {
     max-width: 100%;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 }
 .img-thumbnail {
