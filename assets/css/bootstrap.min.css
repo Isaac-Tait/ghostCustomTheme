@@ -534,8 +534,17 @@ progress {
   content: "— ";
 }
 .img-fluid {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media (max-width: 576px) {
+  .img-fluid {
+    max-width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 .img-thumbnail {
   padding: 0.25rem;
@@ -2405,7 +2414,9 @@ textarea.form-control-lg {
   border-bottom-right-radius: 0;
 }
 .input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;

@@ -35,8 +35,10 @@
   display: flex;
   justify-content: center;
   font-style: italic;
-  height: 75px;
+  height: 2rem;
   align-items: flex-end;
+  background: red;
+  overflow: contain;
 }
 
 .content-center {
@@ -52,6 +54,7 @@
 
 .title {
   padding-top: 20px;
+  font-size: 3rem;
 }
 
 body {
