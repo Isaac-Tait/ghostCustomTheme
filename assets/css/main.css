@@ -186,5 +186,8 @@ body {
 
 .kg-width-full img,
 .kg-width-wide img {
-  // required by gcsan to properly validate the theme
+  max-width: 75%;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
