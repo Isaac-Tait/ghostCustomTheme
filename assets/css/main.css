@@ -186,6 +186,8 @@ body {
 
 .kg-width-full img,
 .kg-width-wide img {
+  display: flex;
+  justify-content: center;
   max-width: 75%;
   height: auto;
   padding-top: 1rem;
