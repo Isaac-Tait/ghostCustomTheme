@@ -105,8 +105,9 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
   color: #6c757d;
   background-color: transparent;
   background-image: none;
@@ -160,9 +161,39 @@ body {
   margin-bottom: 20px;
 }
 
+.post-content {
+  column-count: 2;
+  column-gap: 150px;
+  max-width: 64rem;
+  margin: 32px auto;
+  border: 2px solid hsl(35deg 10% 40%);
+  padding: 50px;
+  background: linear-gradient(
+    to right,
+    hsl(35deg, 30%, 90%),
+    hsl(35deg, 30%, 90%) 47%,
+    hsl(35deg, 30%, 70%) 49.5%,
+    hsl(35deg, 20%, 50%) 50%,
+    hsl(35deg, 30%, 70%) 50.5%,
+    hsl(35deg, 30%, 90%) 53%,
+    hsl(35deg, 30%, 90%)
+  );
+  font-family: 'Merriweather', serif;
+}
+
+.post-content:first-of-type:first-letter {
+  font-size: 3em;
+  float: left;
+  line-height: 1em;
+  margin-right: 0.2em;
+}
+
 .post-content img {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {
