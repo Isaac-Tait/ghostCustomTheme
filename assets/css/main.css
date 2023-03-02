@@ -223,8 +223,16 @@ body {
   }
 }
 
+.kg-width-full img {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .kg-width-regular img {
-  max-width: 50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .kg-width-wide img {
