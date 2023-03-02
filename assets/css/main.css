@@ -223,6 +223,12 @@ body {
   }
 }
 
+.kg-image {
+  height: auto;
+  max-width: 75%;
+  margin-left: 2rem;
+}
+
 .kg-width-full img {
   width: 75%;
   margin-left: auto;
