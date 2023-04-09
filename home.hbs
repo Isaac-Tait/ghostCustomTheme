@@ -1,25 +1,27 @@
 {{!< default}}
 
-<div class="d-flex flex-column">
-    <header class="header">
-            <div class="header__nav">
-                {{navigation}}
-            </div>
-        </header>
-    <div class="container">
-        <div class="row">
-            <h1 class="title d-flex justify-content-start">{{meta_title}}</h1>
-        </div>
-        
-        <div class="row justify-content-center d-flex">
-            <div class="flex-grow-1">  {{! see .img-fluid in bootstrap css file to style logo line 536}}
-                <img src="{{@site.logo}}" class="img-fluid">    
-            </div>          
-        </div> 
-        <div class="row justify-content-end">
-            <div class="col-sm-4">
-                <p class="author">written by Isaac Tait</p>
-            </div>
-        </div>
+<div class='d-flex flex-column home-page-wrapper'>
+  <header class='header'>
+    <div class='header__nav'>
+      {{navigation}}
     </div>
+  </header>
+  <div class='container home-page'>
+    <div class='row'>
+      <h1
+        class='title d-flex justify-content-start'
+      >{{meta_title}}</h1>
+    </div>
+    <div class='row justify-content-center d-flex'>
+      <div class='flex-grow-1'>
+        {{! see .img-fluid in bootstrap css file to style logo line 536}}
+        <img src='{{@site.logo}}' class='img-fluid' />
+      </div>
+    </div>
+    <div class='row justify-content-end'>
+      <div class='col-sm-4'>
+        <p class='author'>written by Isaac Tait</p>
+      </div>
+    </div>
+  </div>
 </div>
