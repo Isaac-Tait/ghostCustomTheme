@@ -1,5 +1,8 @@
 module.exports = {
-  content: ['./*.hbs', './**/*.hbs'],
+  mode: 'jit',
+  purge: ['./*.hbs', './**/*.hbs'],
+  prefix: 'tw-',
+  important: true,
   theme: {
     extend: {},
   },
