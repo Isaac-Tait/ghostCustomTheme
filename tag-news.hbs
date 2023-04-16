@@ -1,31 +1,31 @@
 {{!< default}}
 
 <div>
-    <header class="header">
-        <div class="header__nav">
-            {{navigation type="secondary"}}
-        </div>
-    </header>
-    <div class="page-width">
-        {{#tag}}
-            <div class="content-center">
-                <h1>{{ name }}</h1>
-            </div>
-        {{/tag}}
-        <hr />
-        <div class="posts">
-            {{#foreach posts}}
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <p>{{date published_at format="MM/DD/YYYY"}}&nbsp;--&nbsp;
-                            <a href="{{url absolute="true"}}">
-                                {{title}}
-                            </a>
-                        </p>
-                        <p class="news-excerpt">{{excerpt}}</p>
-                    </li>
-                </ul>
-            {{/foreach}}
-        </div>
+  <header class='header'>
+    <div class='header__nav'>
+      {{navigation type='secondary'}}
     </div>
+  </header>
+  <div class='page-width'>
+    {{#tag}}
+      <div class='content-center'>
+        <h1>{{name}}</h1>
+      </div>
+    {{/tag}}
+    <hr />
+    <div class='posts'>
+      {{#foreach posts}}
+        <ul class='list-group'>
+          <li class='list-group-item'>
+            <p>{{date published_at format='MM/DD/YYYY'}}&nbsp;--&nbsp;
+              <a href='{{url absolute='true'}}'>
+                {{title}}
+              </a>
+            </p>
+            <p class='news-excerpt'>{{excerpt}}</p>
+          </li>
+        </ul>
+      {{/foreach}}
+    </div>
+  </div>
 </div>

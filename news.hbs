@@ -1,17 +1,17 @@
 {{!< default}}
 
 <div>
-    <header class="header">
-        <div class="header__nav">
-            {{navigation type="secondary"}}
-        </div>
-    </header>
-<div class="page-width">
+  <header class='header'>
+    <div class='header__nav'>
+      {{navigation type='secondary'}}
+    </div>
+  </header>
+  <div class='page-width'>
     <h1>The latest news about Wormwood Saga...</h1>
     {{#foreach posts}}
-        <a href="{{url}}">
-            {{ title }}
-        </a>
+      <a href='{{url}}'>
+        {{title}}
+      </a>
     {{/foreach}}
-</div>
+  </div>
 </div>
